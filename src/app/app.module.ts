@@ -12,6 +12,9 @@ import { TripsheetComponent } from './tripsheet/tripsheet.component';
 import { ProfileComponent } from './profile/profile.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { BodyComponent } from './body/body.component';
+import { TaskListComponent } from './tasks/task-list/task-list.component';
+import { TaskDetailComponent } from './tasks/task-detail/task-detail.component';
+import { TaskItemComponent } from './tasks/task-list/task-item/task-item.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +26,10 @@ import { BodyComponent } from './body/body.component';
     TripsheetComponent,
     ProfileComponent,
     NavbarComponent,
-    BodyComponent
+    BodyComponent,
+    TaskListComponent,
+    TaskDetailComponent,
+    TaskItemComponent
   ],
   imports: [
     BrowserModule,
