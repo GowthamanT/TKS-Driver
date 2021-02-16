@@ -1,12 +1,22 @@
-<div class="pt-3">
+<div class="pt-1">
   <a 
     href=""
     class="card"
     style="text-decoration: none;color:black;"
   >
-    <div class="card-body">
-      <h5 class="card-title">{{task.name}}</h5>
-      <p class="card-text">{{task.place}}</p>
+    <div class="card-body row">
+      <div class="col-md-2">
+        <!-- <p class="">{{task.orderId}}</p> -->
+        {{task.orderId}}
+      </div>
+      <div class="col-md-3 ">
+        <!-- <p class="">{{task.name}}</p> -->
+        {{task.name}}
+      </div>
+      <div class="col-md-7 text-center">
+        <!-- <p class="">{{task.place}}</p> -->
+        {{task.place}}
+      </div>
     </div>
   </a>
 </div>

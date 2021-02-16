@@ -1,0 +1,23 @@
+h5 {
+  display: flex;
+  text-align: center;
+}
+
+.card {
+  width: 500px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.algnver {
+  display: flex;
+  align-items: center;
+  /*Center Horizontal*/
+  justify-content: center;
+  /*Center Vertical*/
+  min-height: 91vh;
+}
+
+p {
+  font-size: 19px;
+}

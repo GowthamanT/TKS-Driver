@@ -9,10 +9,13 @@ import { Tasks } from '../tasks.model';
 export class TaskListComponent implements OnInit {
 
   tasks: Tasks[] = [
-    new Tasks('Gowthaman','Alambadi, Kangeyam'),
-    new Tasks('Gowthaman M','Ondipudhur, coimbatore'),
-    new Tasks('Gokul','Palladam, Coimbatore'),
-    new Tasks('Pranavi','Peelamedu, cbe')
+    new Tasks('12881','Gowthaman','Alambadi, Kangeyam'),
+    new Tasks('12882','Gowthaman M','Ondipudhur, coimbatore'),
+    new Tasks('12883','Gokul','Palladam, Coimbatore'),
+    new Tasks('12884','Pranavi','Peelamedu, cbe'),
+    new Tasks('12881','Gowthaman','Alambadi, Kangeyam'),
+    new Tasks('12882','Gowthaman M','Ondipudhur, coimbatore'),
+    new Tasks('12883','Gokul','Palladam, Coimbatore')
   ];
 
   constructor() { }
