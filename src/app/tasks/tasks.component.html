@@ -3,6 +3,9 @@
     <app-task-list></app-task-list>
   </div>
   <div class="col-md-5">
-    <app-task-detail></app-task-detail>
+    <app-task-detail
+    *ngIf = "selectedTask"
+    [task]="selectedTask"
+    ></app-task-detail>
   </div>
 </div>

@@ -3,18 +3,16 @@
     href=""
     class="card"
     style="text-decoration: none;color:black;"
+    (click) = "onSelected()"
   >
     <div class="card-body row">
       <div class="col-md-2">
-        <!-- <p class="">{{task.orderId}}</p> -->
         {{task.orderId}}
       </div>
       <div class="col-md-3 ">
-        <!-- <p class="">{{task.name}}</p> -->
         {{task.name}}
       </div>
       <div class="col-md-7 text-center">
-        <!-- <p class="">{{task.place}}</p> -->
         {{task.place}}
       </div>
     </div>
