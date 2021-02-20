@@ -15,6 +15,8 @@ import { BodyComponent } from './body/body.component';
 import { TaskListComponent } from './tasks/task-list/task-list.component';
 import { TaskDetailComponent } from './tasks/task-detail/task-detail.component';
 import { TaskItemComponent } from './tasks/task-list/task-item/task-item.component';
+import { AttendanceMarkComponent } from './attendance/attendance-mark/attendance-mark.component';
+import { AttendanceListComponent } from './attendance/attendance-list/attendance-list.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { TaskItemComponent } from './tasks/task-list/task-item/task-item.compone
     BodyComponent,
     TaskListComponent,
     TaskDetailComponent,
-    TaskItemComponent
+    TaskItemComponent,
+    AttendanceMarkComponent,
+    AttendanceListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,24 @@
+<div class="row pt-5">
+  <div class="col-12">
+    <table class="table text-center table-striped table-hover">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col" style="text-align:left;">Date</th>
+          <th scope="col">Status</th>
+          <th scope="col">Check In</th>
+          <th scope="col">Check Out</th>
+          <th scope="col">Duration</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let attendanceDt of attendance">
+          <th scope="row" style="text-align:left;">{{attendanceDt.date}}</th>
+          <td>{{attendanceDt.status}}</td>
+          <td>{{attendanceDt.checkin}}</td>
+          <td>{{attendanceDt.checkout}}</td>
+          <td>{{attendanceDt.duration}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

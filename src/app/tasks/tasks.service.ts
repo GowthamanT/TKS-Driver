@@ -9,13 +9,13 @@ export class TasksService {
   taskSelected = new EventEmitter<Tasks>();
 
   private tasks: Tasks[] = [
-    new Tasks('12881','Gowthaman','Alambadi, Kangeyam'),
-    new Tasks('12882','Gowthaman M','Ondipudhur, coimbatore'),
-    new Tasks('12883','Gokul','Palladam, Coimbatore'),
-    new Tasks('12884','Pranavi','Peelamedu, cbe'),
-    new Tasks('12881','Gowthaman','Alambadi, Kangeyam'),
-    new Tasks('12882','Gowthaman M','Ondipudhur, coimbatore'),
-    new Tasks('12883','Gokul','Palladam, Coimbatore')
+    new Tasks('12881','Suresh','cement',6,'Thoppupalayam, Perundurai'),
+    new Tasks('13001','Kannan','gravel',3,'kommakovil, Perundurai'),
+    new Tasks('13013','Raja','cement',5,'kgvalasu, Perundurai'),
+    new Tasks('13029','Harsa','gravel',2,'Papanayakanpalayam, Erode'),
+    new Tasks('13047','Suresh','sand',2,'Thoppupalayam, Perundurai'),
+    new Tasks('13028','Raja','gravel',3,'kgvalasu, Perundurai'),
+    new Tasks('13016','Ponnusamy','cement',5,'merkuvalasu, perundurai')
   ];
 
   getTasks() {

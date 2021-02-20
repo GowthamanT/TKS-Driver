@@ -1,5 +1,20 @@
 .listbg {
   background-image: url(../../img/bg2.jpg);
   background-size: cover;
-  /* height: 620px; */
+  height: 620px;
+}
+
+.algnver {
+  display: flex;
+  align-items: center;
+  /*Center Horizontal*/
+  justify-content: center;
+  /*Center Vertical*/
+  min-height: 91vh;
+}
+
+.card {
+  width: 410px;
+  height: 120px;
+  border-radius: 15px;
 }
