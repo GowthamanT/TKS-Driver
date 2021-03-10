@@ -1,4 +1,7 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Tripsheet } from '../model/tripsheet.model';
+import { TripsheetService } from '../services/tripsheet.service';
 
 @Component({
   selector: 'app-tripsheet',
@@ -7,9 +10,26 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TripsheetComponent implements OnInit {
 
-  constructor() { }
+  tripData:Tripsheet[] = [];
+
+  constructor(private http: HttpClient, private tripSheetService: TripsheetService) {
+    this.fetchData();
+   }
 
   ngOnInit(): void {
+  }
+
+  onSubmit(postData: Tripsheet) {
+    this.tripSheetService.tripSheetSave(postData).subscribe();
+  }
+
+  private fetchData() {
+    this.tripSheetService.tripSheetGetData().subscribe(
+      responseData => {
+        this.tripData = responseData;
+        console.log(this.tripData);
+      }
+    );
   }
 
 }
