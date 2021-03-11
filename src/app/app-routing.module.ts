@@ -8,7 +8,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { TripsheetComponent } from './tripsheet/tripsheet.component';
 
 const routes: Routes = [
-  // {path: '', component:LoginComponent},
+  {path: '', component:LoginComponent},
   {path: 'tasks', component:TasksComponent},
   {path: 'home', component:HomeComponent},
   {path: 'attendance', component:AttendanceComponent},
